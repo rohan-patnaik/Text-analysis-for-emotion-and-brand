@@ -1,4 +1,4 @@
-# sentiment-analysis-using-VADER
+# Text analyzer for emotion and brand
 
 Start by opening and reading the Appraoch.pdf file in thie repo to understand my appraoch and how I took on the questions asked my the assignment.
 
