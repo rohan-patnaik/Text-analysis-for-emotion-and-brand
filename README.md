@@ -9,7 +9,7 @@ And lastly it has also displays the use of RandomForest approach and VADER appro
 wysa2.ipynb has NaiveBayes approach, Roberta approach and a complete brand/product identification using custom NER on top of BERT(the code is fine however its failing coz of some resource issue which i will fix)
 
 I am trying to improve/tinker with the code. I won't break the code(hopefully) since I am trying to add a new method to analyse the brand being targetted in any specific tweet.
-
+You can find the brand prediction for test data in the file branded_test_data.csv
 
 To run the web-app after cloning run the command 'python app.py'
 
