@@ -12,14 +12,18 @@ model = AutoModelForSequenceClassification.from_pretrained(MODEL_new)
 
 # Function to get sentiment using RoBERTa
 def polarity_scores_roberta(text):
-    encoded_text = tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
-    output = model(**encoded_text)
-    scores = output[0][0].detach().numpy()
-    scores = softmax(scores)
-    label_mapping = ['Negative', 'Neutral', 'Positive']
-    max_label = label_mapping[np.argmax(scores)]
-    
-    return max_label
+    try:
+        encoded_text = tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
+        output = model(**encoded_text)
+        scores = output[0][0].detach().numpy()
+        scores = softmax(scores)
+        label_mapping = ['Negative', 'Neutral', 'Positive']  # Ensure this matches model output
+        max_label = label_mapping[np.argmax(scores)]
+        return max_label
+    except IndexError as e:
+        print("An error occurred with label mapping:", e)
+        # Provide a default value or re-raise with a custom message
+        raise IndexError("The index for the maximum score is out of the label mapping range.")
 
 def brand_mapper(label):
     normalized_label = label.lower().replace(" ", "")
@@ -38,12 +42,8 @@ def brand_mapper(label):
 def main():
     if request.method == "POST":
         inp = request.form.get("inp")
-        
-        # Use RoBERTa model for sentiment analysis
         sentiment = polarity_scores_roberta(inp)
-
         brand = brand_mapper(inp)
-
         return render_template('home.html', message=sentiment, brand=brand)
     return render_template('home.html')
 
