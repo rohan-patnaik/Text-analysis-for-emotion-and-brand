@@ -1,6 +1,6 @@
 # Text analyzer for emotion and brand
 
-Start by opening and reading the Appraoch.pdf file in thie repo to understand my appraoch and how I took on the questions asked my the assignment.
+Start by opening and reading the Approach.pdf file in thie repo to understand my appraoch and how I took on the questions asked my the assignment.
 There are 2 notebooks here for you to go through. wysa.ipynb and wysa2.ipynb
 
 wysa.ipynb has full EDA, emotion, tweets and brand/product analysis. It also has a detailed plan on how to structure a pipeline if the given task is to be achieved as a full fledged application.\
