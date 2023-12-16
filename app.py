@@ -6,9 +6,9 @@ import numpy as np
 app = Flask(__name__)
 
 # RoBERTa model setup
-MODEL = "cardiffnlp/twitter-roberta-base-sentiment"
-tokenizer = AutoTokenizer.from_pretrained(MODEL)
-model = AutoModelForSequenceClassification.from_pretrained(MODEL)
+MODEL_new = 'cardiffnlp/twitter-roberta-base-emotion-multilabel-latest'
+tokenizer = AutoTokenizer.from_pretrained(MODEL_new)
+model = AutoModelForSequenceClassification.from_pretrained(MODEL_new)
 
 # Function to get sentiment using RoBERTa
 def polarity_scores_roberta(text):
