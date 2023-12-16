@@ -14,4 +14,5 @@ You can find the brand prediction for test data in the file submission_test_data
 
 To run the web-app after cloning run the command 'python app.py'
 
-![image](https://github.com/rohan-patnaik/sentiment-analysis-using-VADER/assets/22250758/30e2fde2-ff0c-4e1a-ada3-a234d1ab9e45)
+![image](https://github.com/rohan-patnaik/Text-analysis-for-emotion-and-brand/assets/22250758/ca8ee531-b14b-46f4-9e54-028574120567)
+
