@@ -5,7 +5,8 @@ There are 3 notebooks here for you to go through. wysa.ipynb and wysa2.ipynb and
 
 The Custom_Emotion_Analysis.ipynb has A-Z for analysis of emotion in our given data file. Consists of data augmentation, finetuning a pretrained transformer model and makes predictions on given text!
 
-wysa.ipynb and wysa2.ipynb are still a bit rough around the edges(I'll improve it)
+wysa.ipynb and wysa2.ipynb are still a bit rough around the edges(I'll improve it).
+
 wysa.ipynb has full EDA, emotion, tweets and brand/product analysis. It also has a detailed plan on how to structure a pipeline if the given task is to be achieved as a full fledged application.\
 And lastly it has also displays the use of RandomForest approach and VADER approach for sentiment classification.
 
