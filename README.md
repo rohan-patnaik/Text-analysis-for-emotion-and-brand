@@ -1,9 +1,10 @@
 # Text analyzer for emotion and brand
 
 Start by opening and reading the Approach.pdf file in thie repo to understand my appraoch and how I took on the questions asked my the assignment.
-There are 3 notebooks here for you to go through. wysa.ipynb and wysa2.ipynb and Custom_Emotion_Analysis.ipynb
+There are 4 notebooks here for you to go through. wysa.ipynb and wysa2.ipynb, Custom_Emotion_Analysis.ipynb and Custom_Emotion_Analysis_Roberta.ipynb.
 
-The Custom_Emotion_Analysis.ipynb has A-Z for analysis of emotion in our given data file. Consists of data augmentation, finetuning a pretrained transformer model and makes predictions on given text!
+The Custom_Emotion_Analysis.ipynb has A-Z for analysis of emotion in our given data file. Consists of imbalanced data handling, data augmentation, finetuning a pretrained transformer model and makes predictions on given text!
+This notebook makes use of bert-base-uncased model in my approach.
 
 wysa.ipynb and wysa2.ipynb are still a bit rough around the edges(I'll improve it).
 
