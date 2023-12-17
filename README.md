@@ -6,6 +6,8 @@ There are 4 notebooks here for you to go through. wysa.ipynb and wysa2.ipynb, Cu
 The Custom_Emotion_Analysis.ipynb has A-Z for analysis of emotion in our given data file. Consists of imbalanced data handling, data augmentation, finetuning a pretrained transformer model and makes predictions on given text!
 This notebook makes use of bert-base-uncased model in my approach.
 
+(the models folder for saved models was too large to upload so you may find the drive link for it here :https://drive.google.com/drive/folders/1jsX528JA9g3eEt4d6jx5uCvTfFredWMx?usp=drive_link)
+
 wysa.ipynb and wysa2.ipynb are still a bit rough around the edges(I'll improve it).
 
 wysa.ipynb has full EDA, emotion, tweets and brand/product analysis. It also has a detailed plan on how to structure a pipeline if the given task is to be achieved as a full fledged application.\
